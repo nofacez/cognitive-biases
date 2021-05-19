@@ -54,17 +54,25 @@
 	color: #1085c5;
 }
 
+.bg-main {
+	background-color: #fe8a02;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	line-height: 1.6em;
-	color: #2a2626;
+	font: 16px/1.6em normal sans-serif;
+	font-family: 'Open Sans';
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
+	font-family: 'Neucha';
+	font-weight: normal;
 	line-height: 1.2em;
 }
 h1 {
@@ -78,7 +86,78 @@ h3 {
 }
 
 section {
-	width: 1110px;
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.bg-primary::before {
+	content: url('../../assets/images/background.png');
+	position: absolute;
+	right: 0;
+	left: 0;
+
 	text-align: center;
-	margin: 100px;
+	background: #908d8b;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 10%;
+
+	z-index: -1;
+}
+
+.section-content {
+	width: 1110px;
+}
+
+.header-content {
+	position: relative;
+	padding: 100px 0;
+
+	text-align: center;
+}
+
+.header-title {
+	position: absolute;
+
+	text-align: initial;
+}
+
+.header-image {
+	position: relative;
+	height: 525px;
+	top: -45px;
+	right: -270px;
+	z-index: -1;
+}
+
+.text-cols-container {
+	position: absolute;
+	top: 550px;
+	padding-bottom: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	width: 1110px;
+
+	text-align: start;
+}
+
+.text-content {
+	width: 540px;
+}
+
+.header-button {
+	position: absolute;
+	top: 765px;
+	left: 570px;
+	padding: 12px 24px;
+
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.main-sec {
+	background: red;
 }
