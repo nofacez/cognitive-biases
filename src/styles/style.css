@@ -58,12 +58,34 @@
 	background-color: #fe8a02;
 }
 
-* {
-	margin: 0;
-	padding: 0;
+.bg-light {
+	background: #f5f4f0;
+}
+
+.bg-primary::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background: url('../../assets/images/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 10%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 body {
+	margin: 0;
+
 	font: 16px/1.6em normal sans-serif;
 	font-family: 'Open Sans';
 }
@@ -71,6 +93,8 @@ body {
 h1,
 h2,
 h3 {
+	margin: 0;
+
 	font-family: 'Neucha';
 	font-weight: normal;
 	line-height: 1.2em;
@@ -85,36 +109,27 @@ h3 {
 	font-size: 34px;
 }
 
-section {
+.container {
 	display: flex;
-	flex-grow: 1;
-	justify-content: center;
+	flex-wrap: wrap;
+
+	max-width: 1110px;
+	margin: 0 auto;
 }
 
-.bg-primary::before {
-	content: url('../../assets/images/background.png');
-	position: absolute;
-	right: 0;
-	left: 0;
-
-	text-align: center;
-	background: #908d8b;
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 10%;
-
-	z-index: -1;
-}
-
-.section-content {
-	width: 1110px;
-}
-
-.header-content {
+/** HEADER **/
+.header {
 	position: relative;
+
 	padding: 100px 0;
 
-	text-align: center;
+	overflow: hidden;
+}
+
+.header-inner {
+	position: relative;
+
+	width: 100%;
 }
 
 .header-title {
@@ -124,40 +139,62 @@ section {
 }
 
 .header-image {
-	position: relative;
+	position: absolute;
 	height: 525px;
 	top: -45px;
 	right: -270px;
-	z-index: -1;
+}
+
+.header-text-margin {
+	margin-top: 185px;
 }
 
 .text-cols-container {
-	position: absolute;
-	top: 550px;
-	padding-bottom: 40px;
+	position: relative;
 
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	width: 1110px;
+}
 
-	text-align: start;
+.text-content + .text-content {
+	margin-left: 30px;
+}
+
+.text-content + .text-content > p {
+	margin-bottom: 40px;
 }
 
 .text-content {
-	width: 540px;
+	width: 50%;
 }
 
 .header-button {
-	position: absolute;
-	top: 765px;
-	left: 570px;
 	padding: 12px 24px;
-
-	text-align: center;
+	background-color: #fe8a02;
 	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+}
+
+a {
+	color: #fff;
 	text-decoration: none;
 }
 
 .main-sec {
 	background: red;
+}
+
+.video-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.video-section-title {
+	margin-bottom: 30px;
+}
+.video {
+	filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
