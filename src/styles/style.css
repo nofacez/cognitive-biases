@@ -251,3 +251,14 @@ a {
 	font-family: 'Neucha';
 	line-height: 1;
 }
+
+.navigation-card:hover {
+	position: relative;
+	top: 10px;
+
+	background: #fe8a02;
+}
+
+.navigation-card:hover > h3 {
+	color: #fff;
+}
