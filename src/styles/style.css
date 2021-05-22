@@ -196,6 +196,11 @@ a {
 	border: none;
 }
 
+.header-button:hover {
+	padding: 20px 40px;
+	border: #1085c5 solid 1px;
+}
+
 .header-link {
 	color: #fff;
 	text-decoration: none;
