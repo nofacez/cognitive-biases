@@ -140,6 +140,8 @@ a {
   display: flex;
   flex-wrap: wrap;
 
+  justify-content: center;
+
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -255,12 +257,18 @@ a {
   text-align: center;
 }
 
+.video-content > p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .video-section {
   margin-bottom: -200px;
 }
 
 .video-section-title {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .video {
