@@ -228,11 +228,12 @@ a {
 
 .header-button {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 7px 20px;
 
   border: none;
 
   font-weight: bold;
+  font-size: 13px;
 
   text-transform: uppercase;
 
