@@ -249,17 +249,14 @@ a {
 }
 
 /** VIDEO SECTION **/
-.video-content {
-  position: relative;
-
+.definition {
   width: 100%;
 
   text-align: center;
 }
 
-.video-content > p {
-  margin: 0;
-  margin-bottom: 30px;
+.video-title {
+  margin: 30px auto;
 }
 
 .video-section {
@@ -267,7 +264,6 @@ a {
 }
 
 .video-section-title {
-  margin-bottom: 30px;
   text-align: center;
 }
 
