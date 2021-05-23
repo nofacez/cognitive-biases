@@ -54,6 +54,10 @@
 	color: #1085c5;
 }
 
+.bg-white {
+	background: #fff;
+}
+
 .bg-main {
 	background: #fe8a02;
 }
@@ -91,9 +95,9 @@
 	box-sizing: border-box;
 }
 
-* {
+/* * {
 	margin: 0;
-}
+} */
 
 body {
 	margin: 0;
@@ -110,6 +114,7 @@ h3 {
 	font-family: 'Neucha';
 	font-weight: normal;
 	line-height: 1.2em;
+	color: #fe8a02;
 }
 h1 {
 	font-size: 72px;
@@ -177,9 +182,7 @@ a {
 }
 
 .header-title {
-	position: absolute;
-
-	text-align: initial;
+	z-index: 5;
 }
 
 .header-image {
@@ -187,6 +190,7 @@ a {
 	height: 525px;
 	top: -45px;
 	right: -270px;
+	z-index: 0;
 }
 
 .header-text-margin {
@@ -294,35 +298,34 @@ a {
 
 /** IKEA EFFECT **/
 
-.ikea-effect-img {
+.img-shadow-effect {
 	vertical-align: middle;
 	filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.ikea-img-container {
+.left-cols-content {
 	margin-right: 30px;
 }
 
-.ikea-pretitle {
-	color: #908d8b;
+.section-pretitle {
 	font-size: 24px;
 	font-family: 'Neucha';
 }
 
-.ikea-description {
+.section-description {
 	font-size: 34px;
 	font-family: 'Neucha';
 	line-height: 1.2;
 }
 
-.ikea-middle-container {
+.middle-container {
 	display: flex;
 
 	align-items: center;
 	margin-bottom: 20px;
 }
 
-.ikea-middle-title {
+.section-middle-title {
 	font-family: 'Open Sans';
 	font-weight: bold;
 	font-size: 14px;
