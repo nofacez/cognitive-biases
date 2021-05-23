@@ -182,7 +182,8 @@ a {
 }
 
 .header-title {
-	z-index: 5;
+	position: relative;
+	z-index: 1;
 }
 
 .header-image {
@@ -190,7 +191,6 @@ a {
 	height: 525px;
 	top: -45px;
 	right: -270px;
-	z-index: 0;
 }
 
 .header-text-margin {
