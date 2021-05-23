@@ -291,9 +291,10 @@ a {
 }
 
 .navigation-card {
+  flex-basis: 30%;
+
   color: #2a2626;
 
-  flex-basis: 30%;
   padding: 24px;
 }
 
@@ -381,8 +382,8 @@ a {
 }
 
 .agreement-text {
-  font-size: 12px;
   color: #fff;
+  font-size: 12px;
 }
 
 .agreement-text > a {
