@@ -291,8 +291,14 @@ a {
 }
 
 .navigation-card {
+  color: #2a2626;
+
   flex-basis: 30%;
   padding: 24px;
+}
+
+.navigation-card > p {
+  margin-bottom: 0;
 }
 
 .navigation-card-number {
@@ -370,11 +376,16 @@ a {
 
 .input-group {
   display: flex;
-  flex-wrap: wrap;
+
   margin-top: 10px;
 }
 
-.input-group > span > a {
+.agreement-text {
+  font-size: 12px;
+  color: #fff;
+}
+
+.agreement-text > a {
   color: #fff;
   text-decoration: underline;
 }
@@ -383,10 +394,6 @@ a {
   height: 50px;
   padding: 15px;
   border: none;
-}
-
-.agreement-text {
-  font-size: 12px;
 }
 
 .footer-btn {
