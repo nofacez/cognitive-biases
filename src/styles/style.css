@@ -1,5 +1,5 @@
 /** CSS STYLE **/
-/**FONT**/
+/** FONT **/
 @font-face {
 	font-weight: 400;
 	font-family: 'Open Sans';
@@ -95,15 +95,15 @@
 	box-sizing: border-box;
 }
 
-/* * {
+/* {
 	margin: 0;
 } */
 
 body {
 	margin: 0;
 
-	font: 16px/1.6em normal sans-serif;
-	font-family: 'Open Sans';
+	font: 16px/1.6em normal;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -111,17 +111,20 @@ h2,
 h3 {
 	margin: 0;
 
-	font-family: 'Neucha';
 	font-weight: normal;
-	line-height: 1.2em;
+	font-family: 'Neucha', sans-serif;
 	color: #fe8a02;
+	line-height: 1.2em;
 }
+
 h1 {
 	font-size: 72px;
 }
+
 h2 {
 	font-size: 60px;
 }
+
 h3 {
 	font-size: 34px;
 }
@@ -140,6 +143,7 @@ a {
 
 .section {
 	position: relative;
+
 	width: 100%;
 
 	padding: 100px 0;
@@ -188,9 +192,11 @@ a {
 
 .header-image {
 	position: absolute;
-	height: 525px;
+
 	top: -45px;
 	right: -270px;
+
+	height: 525px;
 }
 
 .header-text-margin {
@@ -201,26 +207,31 @@ a {
 	position: relative;
 
 	display: flex;
-	justify-content: space-between;
 	align-items: flex-start;
-	width: 1110px;
-}
+	justify-content: space-between;
 
-.text-content + .text-content {
-	margin-left: 30px;
+	width: 1110px;
 }
 
 .text-content {
 	width: 50%;
 }
 
+.text-content + .text-content {
+	margin-left: 30px;
+}
+
 .header-button {
 	display: inline-block;
 	padding: 12px 24px;
-	background-color: #fe8a02;
+
 	font-weight: bold;
-	text-transform: uppercase;
+
+	background-color: #fe8a02;
+
 	border: none;
+
+	text-transform: uppercase;
 }
 
 .header-button:hover {
@@ -254,7 +265,7 @@ a {
 	z-index: 1;
 }
 
-/**NAVIGATION SECTION**/
+/** NAVIGATION SECTION **/
 .navigation {
 	display: flex;
 	flex-wrap: wrap;
