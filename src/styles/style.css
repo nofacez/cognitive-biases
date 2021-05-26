@@ -299,11 +299,11 @@ a {
   color: #2a2626;
 }
 
-.navigation-title {
+.nav-title {
   padding: 0;
+}
 
-  color: #fe8a02;
-
+.nav-title > h1 {
   font-size: 52px;
 }
 
@@ -328,7 +328,7 @@ li.clickable:hover {
   background: #fe8a02;
 }
 
-li.clickable:hover > h3 {
+li.clickable:hover h3 {
   color: #fff;
 }
 
