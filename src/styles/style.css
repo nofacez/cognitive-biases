@@ -321,14 +321,14 @@ a {
   line-height: 1;
 }
 
-a.navigation-card:hover {
+li.clickable:hover {
   position: relative;
   top: 10px;
 
   background: #fe8a02;
 }
 
-a.navigation-card:hover > h3 {
+li.clickable:hover > h3 {
   color: #fff;
 }
 
